@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elctron con mysql</title>
+    
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 my-auto p-4">
+                <form class="card" id="product_form">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nombre del producto" class="form-control" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="price" placeholder="Price" step="any" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="description" rows="3" cols="4" placeholder="Descripcion del producto" class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-primary" id= "btn_guardar">Guardar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="products">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./app.js">
+
+    </script>
+</body>
+</html>
